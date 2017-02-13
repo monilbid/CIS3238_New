@@ -24,14 +24,22 @@ public class TestClass {
     }
 
     @Test
-    public void testPrintMessage() {
-        assertEquals(29, d1.dayTo(d2));
-        assertEquals(27, d1.dayTo(d2));
+    public void testPrintMessage1() {
+        assertEquals(29, d1.dayTo(d2));  
     }
     
     @Test
     public void testPrintMessage2(){
+        assertEquals(27, d1.dayTo(d2));
+    }
+    
+    @Test
+    public void testPrintMessage3(){
         assertEquals(365, d2.dayTo(d3));
+    }
+    
+    @Test
+    public void testPrintMessage4(){
         assertEquals(325, d2.dayTo(d3));
     }
 }
